@@ -7,7 +7,7 @@ exports.handler = async (event) => {
   crdArray[0] = x;
   crdArray[1] = y;
 
-  console.log(crdArray);
+  console.log(JSON.stringify(crdArray));
 
   return {
     statusCode: 200,
