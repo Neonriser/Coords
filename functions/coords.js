@@ -5,6 +5,7 @@ exports.handler = async (event) => {
   const y = event.queryStringParameters.lng;
 
   crdArray = [x, y];
+  console.log(crdArray);
 
   return {
     statusCode: 200,
