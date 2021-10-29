@@ -4,7 +4,9 @@ exports.handler = async (event) => {
   const x = event.queryStringParameters.lat;
   const y = event.queryStringParameters.lng;
 
-  crdArray = [x, y];
+  crdArray[0] = x;
+  crdArray[1] = y;
+
   console.log(crdArray);
 
   return {
